@@ -1,1 +1,3 @@
-# USBHiddenNetworks-for-WinRM
+### USBHiddenNetworks
+
+Many organizations are working with insolated networks created using routers, firewalls or switches . But a simple USB storage or Thumbdrive connected between different computers within that network can connect all those insolated computers through a new “Hidden Network” bypassing any VLAN. The USB could be an infection point to spread any kind of malware code between all those computers theorically insolated. It could be a big problem like the incident that happened a few years ago with Stuxnet or more recent CIA Brutal Kangaroo. This program in Powershell can identify all the USB storage device that were connected in any of the computers over the network or domain and will create a CSV file with all that information. With all these data in CSV we could create a network graph using several free programs over Internet.
