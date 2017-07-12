@@ -1,4 +1,5 @@
 ﻿# HiddenNetworks
+# SMB PSExec version
 # Output USB data from local computer to CSV file
 
 $USBDevices = @()
@@ -66,11 +67,7 @@ if(-Not $nop)
     for ($i=0; $i -lt $USBDevices.length; $i++) {
         $IDUnico=$USBDevices[$i] | Select -ExpandProperty "USBContainerID"
         $USBNombre=$USBDevices[$i] | Select -ExpandProperty "USBDevice"  
-        Write-Host "Computer: ",$ComputerName -foregroundcolor "black" -backgroundcolor "green"
-        Write-Host "IP: ",$ComputerIP
-        Write-Host "USB found: ",$USBNombre
-        Write-Host "USB ID: ",$IDUnico 
-        Echo "$ComputerName,$ComputerIP,$USBNombre,$IDUnico"       
+        Write-Host "$ComputerName,$ComputerIP,$USBNombre,$IDUnico"       
     }
 }
 
